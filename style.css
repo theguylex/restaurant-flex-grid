@@ -1,0 +1,210 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+/* html {
+    scroll-behavior: smooth;
+} */
+
+body {
+    background-color: black;
+    font-family: sans-serif;
+}
+
+
+.heading {
+    background-color: orange;
+    color: #ffffff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.heading h1 {
+    font-weight: 700;
+    font-size: 60px;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+    font-family: Impact;
+}
+
+.heading h3 {
+    font-family: cursive;
+    font-weight: 300;
+    font-size: 22px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.navbar {
+    /* border:2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-bottom: 2px solid grey;
+}
+  
+.navbar ul {
+    /* border: 1px solid black; */
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+  
+.navbar ul li {
+    /* border: 1px solid black; */
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+  
+.navbar ul li a {
+    /*border: 1px solid yellowgreen;*/
+    text-decoration: none;
+    color: white;
+    padding: 8px 37px;
+    transition: all 0.5s ease;
+}
+  
+.navbar ul li a:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+.menu {
+    padding: 0 10px 30px 10px;
+    display: grid;
+    grid-gap: 20px 40px;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+}
+
+#specials h2, #nigerian-cuisine h2 {
+    color: white;
+    margin-bottom: 10px;
+    /* padding-left: 15px; */
+    font-family: cursive;
+    font-size: 45px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.food-items {
+    display: grid;
+    position: relative;
+    grid-template-rows: auto 1fr;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(230, 197, 50, 0.1);
+}
+
+.food-items img {
+    position: relative;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    /* height: 45vh; */
+}
+
+h1 {
+    /* grid-column: 1/-1; */
+    text-align: center;
+}
+
+.details {
+    padding: 20px 10px;
+    display: grid;
+    grid-row-gap: 15px;
+    grid-template-rows: auto 1fr 50px;
+}
+
+.details-sub {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.details-sub h5 {
+    font-weight: 600;
+    font-size: 18px;
+    color: orangered;
+}
+
+.price {
+    text-align: right;
+}
+
+.details p {
+    color: orangered;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 400;
+    align-self: stretch;
+}
+
+.details button {
+    background-color: orange;
+    border: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 180px;
+    display: inline-block;
+}
+
+.details button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.details button span:after {
+    content: '\1F6D2';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.details button:hover span {
+    padding-right: 25px;
+}
+
+.details button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#contact {
+    color: white;
+    border-top: 2px solid grey;
+    display: flex;
+    /* width: 100%; */
+    /* border: 3px solid white; */
+    padding-left: 60px;
+    padding-right: 60px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 30vh;
+    align-items: center;
+}
+
+.address {
+    text-align: center;
+    line-height: 40px;
+    /* padding-left: 130px; */
+}
+
+footer {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+}
