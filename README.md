@@ -13,11 +13,8 @@ This restaurant page includes different menus with pictures and prices for varyi
 
 <img src="screenshot/Screenshot (151).png" alt="project screen">
 
-<img src="screenshot/Screenshot (152).pngscreenshot/Screenshot (151).png" alt="project screen">
-
 <img src="screenshot/Screenshot (152).png" alt="project screen">
 
 <img src="screenshot/Screenshot (153).png" alt="project screen">
 
-
-<img src="screenshot/Screenshot (153).pngscreenshot/Screenshot (154).png" alt="project screen">
+<img src="screenshot/Screenshot (154).png" alt="project screen">
