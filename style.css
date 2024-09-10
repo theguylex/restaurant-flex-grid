@@ -38,6 +38,14 @@ body {
     margin-bottom: 10px;
 }
 
+.top {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 40px;
+    align-items: center;
+    border-bottom: 2px solid grey;
+}
+
 .navbar {
     /* border:2px solid blue; */
     display: flex;
@@ -47,7 +55,6 @@ body {
     position: sticky;
     top: 0;
     z-index: 1;
-    border-bottom: 2px solid grey;
 }
   
 .navbar ul {
@@ -76,6 +83,12 @@ body {
     background-color: white;
     color: black;
     box-shadow: 0 0 10px white;
+}
+
+#menu-icon {
+    font-size: 2rem;
+    color: white;
+    display: none;
 }
 
 .menu {
@@ -207,4 +220,99 @@ footer {
     text-align: center;
     align-items: center;
     margin-top: 20px;
+}
+
+@media(max-width:895px) {
+    .navbar {
+        position: absolute;
+        top: 20%;
+        left: -50%;
+        width: 40%;
+        padding: 1rem 3%;
+        background-color: rgba(0, 0, 0, .8);
+        transition: all .8s ease;
+    }
+
+    #menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin: 0px 1px;
+    }
+
+    .navbar ul li a {
+        line-height: 1px;
+        padding: 12px 50px;
+        font-size: 1.5rem;
+    }
+    
+    .navbar a {
+        display: block;
+        font-size: 1.5rem;
+        margin: 1rem 0;
+        color: black;
+    }
+    
+    .navbar.open {
+        left: 0%;
+    }
+    
+    .navbar .active {
+        display: block;
+    }
+}
+
+/* navbar needs work */
+@media(max-width:530px) {
+    .navbar {
+        position: absolute;
+        top: 40%;
+        left: -50%;
+        width: 40%;
+        padding: 1rem 3%;
+        background-color: rgba(0, 0, 0, .8);
+        transition: all .8s ease;
+    }
+
+    #menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin: 0px 1px;
+    }
+
+    .navbar ul li a {
+        line-height: 1px;
+        padding: 12px 50px;
+        font-size: 1.5rem;
+    }
+    
+    .navbar a {
+        display: block;
+        font-size: 1.5rem;
+        margin: 1rem 0;
+        color: black;
+    }
+    
+    .navbar.open {
+        left: 0%;
+    }
+    
+    .navbar .active {
+        display: block;
+    }
 }
