@@ -315,4 +315,12 @@ footer {
     .navbar .active {
         display: block;
     }
+
+    .address {
+        margin-bottom: 3rem;
+    }
+
+    .payports {
+        margin-bottom: 2rem;
+    }
 }
