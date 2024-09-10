@@ -2,7 +2,6 @@
 
 ## A restaurant page created with CSS flex and grid properties
 
-
 This restaurant page includes different menus with pictures and prices for varying dishes.
 
 * First action carried out was the creation of different menus -specials & Nigerian cuisine- implemented with divs having a number of divs a child elements which contained headers, images, paragraph and button elements.
